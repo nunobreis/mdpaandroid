@@ -1,7 +1,9 @@
-package nuno.lasalle.mdpa.matchapp;
+package nuno.lasalle.mdpa.matchapp.view.view;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import nuno.lasalle.mdpa.matchapp.R;
 
 public class MainActivity extends AppCompatActivity {
 
