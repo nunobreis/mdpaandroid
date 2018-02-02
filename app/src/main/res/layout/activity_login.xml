@@ -11,4 +11,53 @@
     android:background="@drawable/background_main"
     android:gravity="bottom">
 
+    <TextView
+        android:id="@+id/email_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="E-mail" />
+
+    <EditText
+        android:id="@+id/user_mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkWhite"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="john_doe@youremail.com" />
+
+    <TextView
+        android:id="@+id/password_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        android:text="Password" />
+
+    <EditText
+        android:id="@+id/user_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/darkWhite"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="yourPassword" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:textColor="@color/lightBlue"
+        android:text="Sign Up"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/lightBlue"
+        android:textColor="@color/white"
+        android:text="Sign In"/>
+
 </LinearLayout>
