@@ -3,6 +3,8 @@ package nuno.lasalle.mdpa.matchapp;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import nuno.lasalle.mdpa.matchapp.databinding.ActivityLoginBinding;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
