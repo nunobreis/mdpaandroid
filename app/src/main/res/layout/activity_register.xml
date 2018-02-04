@@ -100,12 +100,13 @@
 
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/register_sign_up_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/white"
             android:textColor="@color/lightBlue"
             android:text="Sign Up"
+            android:onClick="signUp"
             android:layout_marginBottom="10dp"/>
 
     </LinearLayout>
