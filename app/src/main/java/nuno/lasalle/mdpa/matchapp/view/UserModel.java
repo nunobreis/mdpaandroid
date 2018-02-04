@@ -1,4 +1,4 @@
-package nuno.lasalle.mdpa.matchapp.viewmodel;
+package nuno.lasalle.mdpa.matchapp.view;
 
 import nuno.lasalle.mdpa.matchapp.model.User;
 
