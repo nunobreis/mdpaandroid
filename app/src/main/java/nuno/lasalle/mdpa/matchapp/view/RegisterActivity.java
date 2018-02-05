@@ -50,13 +50,13 @@ public class RegisterActivity extends AppCompatActivity {
         mEmailView = (AutoCompleteTextView) findViewById(R.id.register_email);
         mUsernameView = (AutoCompleteTextView) findViewById(R.id.register_username);
         mPasswordView = (EditText) findViewById(R.id.register_password);
-        mConfirmPasswordView = findViewById(R.id.register_confirm_password);
+        mConfirmPasswordView = (EditText) findViewById(R.id.register_confirm_password);
 
 
         mConfirmPasswordView.setOnEditorActionListener(new TextView.OnEditorActionListener() {
             @Override
             public boolean onEditorAction(TextView v, int id, KeyEvent event) {
-                if (id == 200 || id == EditorInfo.IME_NULL) {
+                if (id == R.integer.register_form_finished || id == EditorInfo.IME_NULL) {
                     attemptRegistration();
                     return true;
                 }
