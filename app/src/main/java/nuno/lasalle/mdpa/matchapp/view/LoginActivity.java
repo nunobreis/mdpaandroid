@@ -100,7 +100,7 @@ public class LoginActivity extends AppCompatActivity {
                     Log.d("matchapp", "Problem signing in", task.getException());
                     showErrorDialog("There was a problem signing in");
                 } else {
-                    Intent intent = new Intent(LoginActivity.this, DiscoveryActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, DeckOfCards.class);
                     finish();
                     startActivity(intent);
                 }
