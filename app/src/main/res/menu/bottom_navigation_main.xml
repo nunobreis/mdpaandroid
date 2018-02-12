@@ -10,17 +10,17 @@
         android:checked="true"/>
     <item
         android:id="@+id/settings"
-        android:enabled="false"
+        android:enabled="true"
         android:icon="@drawable/ic_settings"
         android:title="Settings"/>
     <item
         android:id="@+id/chat"
-        android:enabled="false"
+        android:enabled="true"
         android:icon="@drawable/ic_chat"
         android:title="Chat"/>
     <item
         android:id="@+id/profile"
-        android:enabled="false"
+        android:enabled="true"
         android:icon="@drawable/ic_action_name"
         android:title="Profile" />
 
