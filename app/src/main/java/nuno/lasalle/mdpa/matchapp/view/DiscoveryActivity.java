@@ -11,6 +11,7 @@ import android.view.MenuItem;
 
 
 import nuno.lasalle.mdpa.matchapp.R;
+import nuno.lasalle.mdpa.matchapp.view.adapter.CardStackAdapter;
 
 /**
  * Created by nunoreis on 05/02/2018.
@@ -18,6 +19,7 @@ import nuno.lasalle.mdpa.matchapp.R;
 
 public class DiscoveryActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
+    private CardStackAdapter mAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,19 +45,20 @@ public class DiscoveryActivity extends AppCompatActivity implements BottomNaviga
         switch(item.getItemId())
         {
             case R.id.cards:
-                fragment = GameFragment.newInstance();
+                mAdapter = new CardStackAdapter(getSupportFragmentManager());
+                //fragment = GameFragment.newInstance();
                 break;
 
             case R.id.settings:
-                fragment = SettingsFragment.newInstance();
+                //fragment = SettingsFragment.newInstance();
                 break;
 
             case R.id.chat:
-                fragment = ChatFragment.newInstance();
+                //fragment = ChatFragment.newInstance();
                 break;
 
             case R.id.profile:
-                fragment = ProfileFragment.newInstance();
+                //fragment = ProfileFragment.newInstance();
                 break;
         }
 
