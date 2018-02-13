@@ -6,5 +6,5 @@ import android.arch.lifecycle.ViewModel;
  * Created by nunoreis on 12/02/2018.
  */
 
-public class CardsViewModel extends ViewModel {
+public class CardStackViewModel extends ViewModel {
 }

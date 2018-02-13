@@ -45,7 +45,7 @@ public class DiscoveryActivity extends AppCompatActivity implements BottomNaviga
         switch(item.getItemId())
         {
             case R.id.cards:
-                fragment = GameFragment.newInstance();
+                fragment = CardFragment.newInstance();
                 break;
 
             case R.id.settings:
@@ -72,7 +72,7 @@ public class DiscoveryActivity extends AppCompatActivity implements BottomNaviga
 
     private void initFragmentManager() {
         FragmentManager fragmentManager = getSupportFragmentManager();
-        GameFragment fragment = GameFragment.newInstance();
+        CardFragment fragment = CardFragment.newInstance();
         fragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit();
     }
 }

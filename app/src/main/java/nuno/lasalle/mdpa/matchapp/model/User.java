@@ -6,35 +6,31 @@ package nuno.lasalle.mdpa.matchapp.model;
 
 public class User {
 
-    private String firstName, lastName, location, profession, description;
+    private String profilePicture, name, location;
     private int age;
 
-    public User() {
-    }
-
-    public User(String firstName, String lastName, String location, String profession, String description, int age) {
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.location = location;
-        this.profession = profession;
-        this.description = description;
+    public User(String profilePicture, String name, int age, String location) {
+        this.profilePicture = profilePicture;
+        this.name = name;
         this.age = age;
+        this.location = location;
     }
 
-    public String getFirstName() {
-        return firstName;
+
+    public String getProfilePicture() {
+        return profilePicture;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setProfilePicture(String profilePicture) {
+        this.name = profilePicture;
     }
 
-    public String getLastName() {
-        return lastName;
+    public String getName() {
+        return name;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getLocation() {
@@ -45,22 +41,6 @@ public class User {
         this.location = location;
     }
 
-    public String getProfession() {
-        return profession;
-    }
-
-    public void setProfession(String profession) {
-        this.profession = profession;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
     public int getAge() {
         return age;
     }
@@ -69,3 +49,5 @@ public class User {
         this.age = age;
     }
 }
+
+

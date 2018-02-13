@@ -9,18 +9,18 @@ import android.view.ViewGroup;
 import android.arch.lifecycle.ViewModelProviders;
 
 import nuno.lasalle.mdpa.matchapp.R;
-import nuno.lasalle.mdpa.matchapp.view.model.CardsViewModel;
+import nuno.lasalle.mdpa.matchapp.view.model.CardStackViewModel;
 
 /**
  * Created by nunoreis on 07/02/2018.
  */
 
-public class GameFragment extends Fragment {
+public class CardFragment extends Fragment {
 
-    private CardsViewModel cardsViewModel;
+    private CardStackViewModel cardStackViewModel;
 
-    public static GameFragment newInstance() {
-        GameFragment fragment = new GameFragment();
+    public static CardFragment newInstance() {
+        CardFragment fragment = new CardFragment();
         return fragment;
     }
 
@@ -28,12 +28,12 @@ public class GameFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        cardsViewModel = ViewModelProviders.of(getActivity()).get(CardsViewModel.class);
+        cardStackViewModel = ViewModelProviders.of(getActivity()).get(CardStackViewModel.class);
     }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.game_fragment, container, false);
+        View view = inflater.inflate(R.layout.card_fragment, container, false);
 
         return view;
 
