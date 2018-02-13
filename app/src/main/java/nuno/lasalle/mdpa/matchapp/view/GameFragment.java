@@ -6,7 +6,7 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-//import android.arch.lifecycle.ViewModelProviders;
+import android.arch.lifecycle.ViewModelProviders;
 
 import nuno.lasalle.mdpa.matchapp.R;
 import nuno.lasalle.mdpa.matchapp.view.model.CardsViewModel;
@@ -28,8 +28,7 @@ public class GameFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        //private cardsViewModel = ViewModelProviders.of(getActivity()).get(CardsViewModel.class);
-
+        cardsViewModel = ViewModelProviders.of(getActivity()).get(CardsViewModel.class);
     }
 
     @Override
