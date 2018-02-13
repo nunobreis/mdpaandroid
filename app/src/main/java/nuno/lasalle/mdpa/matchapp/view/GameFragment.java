@@ -6,14 +6,18 @@ import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+//import android.arch.lifecycle.ViewModelProviders;
 
 import nuno.lasalle.mdpa.matchapp.R;
+import nuno.lasalle.mdpa.matchapp.view.model.CardsViewModel;
 
 /**
  * Created by nunoreis on 07/02/2018.
  */
 
 public class GameFragment extends Fragment {
+
+    private CardsViewModel cardsViewModel;
 
     public static GameFragment newInstance() {
         GameFragment fragment = new GameFragment();
@@ -23,6 +27,8 @@ public class GameFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //private cardsViewModel = ViewModelProviders.of(getActivity()).get(CardsViewModel.class);
 
     }
 

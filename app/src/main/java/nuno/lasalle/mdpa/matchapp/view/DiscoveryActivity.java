@@ -45,20 +45,19 @@ public class DiscoveryActivity extends AppCompatActivity implements BottomNaviga
         switch(item.getItemId())
         {
             case R.id.cards:
-                mAdapter = new CardStackAdapter(getSupportFragmentManager());
-                //fragment = GameFragment.newInstance();
+                fragment = GameFragment.newInstance();
                 break;
 
             case R.id.settings:
-                //fragment = SettingsFragment.newInstance();
+                fragment = SettingsFragment.newInstance();
                 break;
 
             case R.id.chat:
-                //fragment = ChatFragment.newInstance();
+                fragment = ChatFragment.newInstance();
                 break;
 
             case R.id.profile:
-                //fragment = ProfileFragment.newInstance();
+                fragment = ProfileFragment.newInstance();
                 break;
         }
 

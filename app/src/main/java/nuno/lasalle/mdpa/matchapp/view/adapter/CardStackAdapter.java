@@ -8,7 +8,4 @@ import android.app.FragmentManager;
 
 public class CardStackAdapter {
 
-    public CardStackAdapter(FragmentManager fm) {
-        super(fm);
-    }
 }
