@@ -1,5 +1,6 @@
 package nuno.lasalle.mdpa.matchapp.view;
 
+import android.arch.lifecycle.ViewModelProviders;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -12,6 +13,7 @@ import android.view.MenuItem;
 
 import nuno.lasalle.mdpa.matchapp.R;
 import nuno.lasalle.mdpa.matchapp.view.adapter.CardStackAdapter;
+import nuno.lasalle.mdpa.matchapp.view.model.CardStackViewModel;
 
 /**
  * Created by nunoreis on 05/02/2018.
@@ -19,12 +21,13 @@ import nuno.lasalle.mdpa.matchapp.view.adapter.CardStackAdapter;
 
 public class DiscoveryActivity extends AppCompatActivity implements BottomNavigationView.OnNavigationItemSelectedListener {
 
-    private CardStackAdapter mAdapter;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_discovery);
+
+        CardStackViewModel cardStackViewModel = ViewModelProviders.of(this).get(CardStackViewModel.class);
+        cardStackViewModel.setResources(getResources());
 
         BottomNavigationView bottomNavigationView = (BottomNavigationView) findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(this);
@@ -76,5 +79,3 @@ public class DiscoveryActivity extends AppCompatActivity implements BottomNaviga
         fragmentManager.beginTransaction().replace(R.id.fragment_container, fragment).commit();
     }
 }
-
-//cards , settings , chat , profile

@@ -6,6 +6,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -17,16 +18,15 @@ import nuno.lasalle.mdpa.matchapp.model.User;
  * Created by nunoreis on 12/02/2018.
  */
 
-public class CardStackAdapter extends RecyclerView.Adapter<CardStackAdapter.ViewHolder>{
+public class CardStackAdapter extends RecyclerView.Adapter<CardStackAdapter.ViewHolder> {
 
-    public class ViewHolder extends RecyclerView.ViewHolder
-    {
+    public class ViewHolder extends RecyclerView.ViewHolder {
         public TextView name;
         public TextView age;
         public TextView location;
+//        public ImageView profilePicture;
 
-        public ViewHolder(View itemView)
-        {
+        public ViewHolder(View itemView) {
             super(itemView);
 
             name = (TextView) itemView.findViewById(R.id.name);
@@ -61,9 +61,10 @@ public class CardStackAdapter extends RecyclerView.Adapter<CardStackAdapter.View
     public void onBindViewHolder(ViewHolder holder, int position) {
         User user = values.get(position);
 
-        holder.name.setText(user.getName() + ", " + Integer.toString(user.getAge()));
+     //   holder.profilePicture.setImageResource(Integer.parseInt(user.getProfilePicture()));
+        holder.name.setText(user.getName());
         holder.location.setText(user.getLocation());
-
+        holder.age.setText(user.getAge() + " years old");
     }
 
     @Override
@@ -80,5 +81,4 @@ public class CardStackAdapter extends RecyclerView.Adapter<CardStackAdapter.View
         super.onViewDetachedFromWindow(holder);
         holder.itemView.clearAnimation();
     }
-
 }
