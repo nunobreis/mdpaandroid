@@ -11,4 +11,6 @@
 
     <color name="lightBlue">#76CDED</color>
 
+    <color name="msg_bg">#E1D1CE</color>
+
 </resources>
