@@ -1,4 +1,5 @@
 # mdpaandroid
+This is a small project for academic purposes only. It is meant to be a java/android-studio practice for the author
 
 ## Project Description:
 The following project has no real-usage purpose. It comes about in the context of an IT masters on design and development of mobile apps. In that scenario it is a modest attempt to generate a "Tinder" clone app for the android environment.
