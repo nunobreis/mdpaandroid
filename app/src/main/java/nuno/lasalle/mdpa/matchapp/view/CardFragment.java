@@ -51,7 +51,7 @@ public class CardFragment extends Fragment {
         RecyclerView userRecyclerView = (RecyclerView) view.findViewById(R.id.user_list);
         final CardStackAdapter cardstackAdapter = new CardStackAdapter(getContext(), new ArrayList<User>());
         userRecyclerView.setAdapter(cardstackAdapter);
-        userRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false));
+        userRecyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false));
 
         cardStackViewModel.getUserTitleList().observe(this, userTitleList -> {
             cardstackAdapter.setValues(userTitleList);
