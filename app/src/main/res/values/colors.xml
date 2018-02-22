@@ -10,6 +10,8 @@
     <color name="darkText">#333333</color>
 
     <color name="lightBlue">#76CDED</color>
+    <color name="accept">#6BDE84</color>
+    <color name="reject">#FE695A</color>
 
     <color name="msg_bg">#E1D1CE</color>
 

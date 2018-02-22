@@ -18,32 +18,36 @@ import java.util.List;
 
 import nuno.lasalle.mdpa.matchapp.R;
 import nuno.lasalle.mdpa.matchapp.model.Chat;
-import nuno.lasalle.mdpa.matchapp.model.User;
 
 /**
  * Created by nunoreis on 21/02/2018.
  */
 
+// Manager file - to parse the JSON file with dummy chat data
+
 public class ChatManager {
 
+    // member variables:
     private List<Chat> messagesList;
-
     private Resources resources;
 
+    // public method that returns fillChatListFromFile() method
     public ChatManager() {
         fillChatListFromFile();
     }
 
+    // getter
     public List<Chat> getUsersList() {
         return messagesList;
     }
 
-
+    // setter
     public void setResources(Resources resources) {
         this.resources = resources;
         fillChatListFromFile();
     }
 
+    // fillChatListFromFile() method defined here
     private void fillChatListFromFile() {
         try {
             String jsonContent = readJsonFile(R.raw.chat);
@@ -69,7 +73,7 @@ public class ChatManager {
         }
     }
 
-
+    // Private to read JSON
     private String readJsonFile(int file) {
         InputStream is = resources.openRawResource(file);
         Writer writer = new StringWriter();
