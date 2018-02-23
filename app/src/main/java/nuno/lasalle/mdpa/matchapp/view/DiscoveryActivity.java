@@ -14,6 +14,7 @@ import android.view.MenuItem;
 import nuno.lasalle.mdpa.matchapp.R;
 import nuno.lasalle.mdpa.matchapp.view.adapter.CardStackAdapter;
 import nuno.lasalle.mdpa.matchapp.view.model.CardStackViewModel;
+import nuno.lasalle.mdpa.matchapp.view.model.ChatViewModel;
 
 /**
  * Created by nunoreis on 05/02/2018.

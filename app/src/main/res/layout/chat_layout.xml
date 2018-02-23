@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:ignore="NamespaceTypo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:background="@drawable/border_set">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/messagePic"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:src="@drawable/charlize_theron"
+            app:civ_border_color="#FFFFFF" />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="5dp">
+
+                <TextView
+                    android:id="@+id/author"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Carolina"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:gravity="left" />
+
+                <TextView
+                    android:id="@+id/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Barcelona"
+                    android:textSize="15dp"
+                    android:gravity="left" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:text="Jan, 12th"
+            android:textSize="12dp"
+            android:gravity="right" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
